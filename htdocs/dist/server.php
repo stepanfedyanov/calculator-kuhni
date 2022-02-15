@@ -38,15 +38,15 @@ try {
     $mail->Debugoutput = function($str, $level) {$GLOBALS['status'][] = $str;};
 
     // Настройки вашей почты
-    $mail->Host       = 'smtp.timeweb.ru'; // SMTP сервера вашей почты
-    $mail->Username   = 'server@kuhni-house.ru'; // Логин на почте
-    $mail->Password   = 'h29MNrgS'; // Пароль на почте
+    $mail->Host       = '?'; // SMTP сервера вашей почты
+    $mail->Username   = '?'; // Логин на почте
+    $mail->Password   = '?'; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
-    $mail->setFrom('server@kuhni-house.ru', 'Сервер'); // Адрес самой почты и имя отправителя
+    $mail->setFrom('?', 'Сервер'); // Адрес самой почты и имя отправителя
 
     // Получатель письма
-    $mail->addAddress('denis9684845577@yandex.ru');  
+    $mail->addAddress('?');  
 
     
 // Отправка сообщения
