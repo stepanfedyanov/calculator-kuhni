@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <div class="calculator__tabs">
+                <div class="calculator__tab calculator__tab_active" type="1"><img src="img/calcImg1.png" alt="Вариант 1"></div>
+                <div class="calculator__tab" type="2"><img src="img/calcImg2.png" alt="Вариант 2"></div>
+                <div class="calculator__tab" type="3"><img src="img/calcImg3.png" alt="Вариант 3"></div>
+                <div class="calculator__tab" type="4"><img src="img/calcImg4.png" alt="Вариант 4"></div>
+                <div class="calculator__tab" type="5"><img src="img/calcImg5.png" alt="Вариант 5"></div>
+            </div>
+            <div class="calculator__slides">
+                <div class="calculator__slide calculator__slide_active">
+                    <form id="calculator-form-1" class="calculator-form" method="POST">
+                        <div class="calculator__slide-ratio">
+                            <div class="calculator__input">
+                                <span class="calculator__input-btn" data-range="1" data-step="-20">
+                                    <img src="img/chevron.svg" alt="icon">
+                                </span>
+                                <label class="noselect">4 м 00 см</label>
+                                <input type="range" name="width" min="0" step="1" max="800">
+                                <span class="calculator__input-btn" data-range="1" data-step="20">
+                                    <img src="img/chevron.svg" alt="icon">
+                                </span>
+                            </div>
+                            
+                            <img src="img/calcImg1.png" class="noselect" alt="Кухня">
+    
+                        </div>
+                        <div class="calculator__slide-form noselect">
+                            <select name="material">
+                                <option value="not" selected>Материал не выбран</option>
+                                <option value="Пленка ПВХ">Пленка ПВХ</option>
+                                <option value="Пластик">Пластик</option>
+                                <option value="Массив дерева">Массив дерева</option>
+                                <option value="Эмаль">Эмаль</option>
+                            </select>
+                            <input type="text" name="wishes" placeholder="Ещё пожелания"></textarea>
+                            <input type="text" name="name" required placeholder="Ваше имя">
+                            <input type="tel" name="phone" required placeholder="Ваш номер телефона">
+
+                            <div class="calculator__checkbox">
+                                <input type="checkbox" id="check" name="checkbox" required>
+                                <label for="check">Согласен на обработку данных</label>
+                            </div>
+
+                            <button>Расчитать цену</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="calculator__slide">
+                    <form id="calculator-form-2" class="calculator-form" action="/calculator-form.php" method="POST">
+                        <div class="calculator__slide-ratio">
+                            <div class="calculator__input">
+                                <span class="calculator__input-btn" data-range="2" data-step="-20">
+                                    <img src="img/chevron.svg" alt="icon">
+                                </span>
+                                <label class="noselect">4 м 00 см</label>
+                                <input type="range" name="width" min="0" step="1" max="800">
+                                <span class="calculator__input-btn" data-range="2" data-step="20">
+                                    <img src="img/chevron.svg" alt="icon">
+                                </span>
+                            </div>
+                            
+                            <img src="img/calcImg2.png" class="noselect" alt="Кухня">
+
+                            <div class="calculator__input calculator__input-left">
+                                <span class="calculator__input-btn" data-range="3" data-step="-20">
+                                    <img src="img/chevron.svg" alt="icon">
+                                </span>
+                                <label class="noselect">4 м 00 см</label>
+                                <input type="range" name="left-size" min="0" step="1" max="800">
+                                <span class="calculator__input-btn" data-range="3" data-step="20">
+                                    <img src="img/chevron.svg" alt="icon">
+                                </span>
+                            </div>
+    
+                        </div>
+                        <div class="calculator__slide-form noselect">
+                            <select name="material">
+                                <option value="not" selected>Материал не выбран</option>
+                                <option value="Пленка ПВХ">Пленка ПВХ</option>
+                                <option value="Пластик">Пластик</option>
+                                <option value="Массив дерева">Массив дерева</option>
+                                <option value="Эмаль">Эмаль</option>
+                            </select>
+                            <input type="text" name="wishes" placeholder="Ещё пожелания"></textarea>
+                            <input type="text" name="name" required placeholder="Ваше имя">
+                            <input type="tel" name="phone" required placeholder="Ваш номер телефона">
+
+                            <div class="calculator__checkbox">
+                                <input type="checkbox" id="check" name="checkbox" required>
+                                <label for="check">Согласен на обработку данных</label>
+                            </div>
+
+                            <button>Расчитать цену</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="calculator__slide">
+                    <form id="calculator-form-3" class="calculator-form" action="/calculator-form.php" method="POST">
+                        <div class="calculator__slide-ratio">
+                            <div class="calculator__input">
+                                <span class="calculator__input-btn" data-range="4" data-step="-20">
+                                    <img src="img/chevron.svg" alt="icon">
+                                </span>
+                                <label class="noselect">4 м 00 см</label>
+                                <input type="range" name="width" min="0" step="1" max="800">
+                                <span class="calculator__input-btn" data-range="4" data-step="20">
+                                    <img src="img/chevron.svg" alt="icon">
+                                </span>
+                            </div>
+                            
+                            <img src="img/calcImg3.png" class="noselect" alt="Кухня">
+
+                            <div class="calculator__input calculator__input-right">
+                                <span class="calculator__input-btn" data-range="5" data-step="-20">
+                                    <img src="img/chevron.svg" alt="icon">
+                                </span>
+                                <label class="noselect">4 м 00 см</label>
+                                <input type="range" name="right-size" min="0" step="1" max="800">
+                                <span class="calculator__input-btn" data-range="5" data-step="20">
+                                    <img src="img/chevron.svg" alt="icon">
+                                </span>
+                            </div>
+    
+                        </div>
+                        <div class="calculator__slide-form noselect">
+                            <select name="material">
+                                <option value="not" selected>Материал не выбран</option>
+                                <option value="Пленка ПВХ">Пленка ПВХ</option>
+                                <option value="Пластик">Пластик</option>
+                                <option value="Массив дерева">Массив дерева</option>
+                                <option value="Эмаль">Эмаль</option>
+                            </select>
+                            <input type="text" name="wishes" placeholder="Ещё пожелания"></textarea>
+                            <input type="text" name="name" required placeholder="Ваше имя">
+                            <input type="tel" name="phone" required placeholder="Ваш номер телефона">
+
+                            <div class="calculator__checkbox">
+                                <input type="checkbox" id="check" name="checkbox" required>
+                                <label for="check">Согласен на обработку данных</label>
+                            </div>
+
+                            <button>Расчитать цену</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="calculator__slide">
+                    <form id="calculator-form-4" class="calculator-form" action="/calculator-form.php" method="POST">
+                        <div class="calculator__slide-ratio">
+                            <div class="calculator__input">
+                                <span class="calculator__input-btn" data-range="6" data-step="-20">
+                                    <img src="img/chevron.svg" alt="icon">
+                                </span>
+                                <label class="noselect">4 м 00 см</label>
+                                <input type="range" name="width" min="0" step="1" max="800">
+                                <span class="calculator__input-btn" data-range="6" data-step="20">
+                                    <img src="img/chevron.svg" alt="icon">
+                                </span>
+                            </div>
+                            
+                            <img src="img/calcImg4.png" class="noselect" alt="Кухня">
+
+                            <div class="calculator__input calculator__input-left">
+                                <span class="calculator__input-btn" data-range="7" data-step="-20">
+                                    <img src="img/chevron.svg" alt="icon">
+                                </span>
+                                <label class="noselect">4 м 00 см</label>
+                                <input type="range" name="left-size" min="0" step="1" max="800">
+                                <span class="calculator__input-btn" data-range="7" data-step="20">
+                                    <img src="img/chevron.svg" alt="icon">
+                                </span>
+                            </div>
+
+                            <div class="calculator__input calculator__input-right">
+                                <span class="calculator__input-btn" data-range="8" data-step="-20">
+                                    <img src="img/chevron.svg" alt="icon">
+                                </span>
+                                <label class="noselect">4 м 00 см</label>
+                                <input type="range" name="right-size" min="0" step="1" max="800">
+                                <span class="calculator__input-btn" data-range="8" data-step="20">
+                                    <img src="img/chevron.svg" alt="icon">
+                                </span>
+                            </div>
+    
+                        </div>
+                        <div class="calculator__slide-form noselect">
+                            <select name="material">
+                                <option value="not" selected>Материал не выбран</option>
+                                <option value="Пленка ПВХ">Пленка ПВХ</option>
+                                <option value="Пластик">Пластик</option>
+                                <option value="Массив дерева">Массив дерева</option>
+                                <option value="Эмаль">Эмаль</option>
+                            </select>
+                            <input type="text" name="wishes" placeholder="Ещё пожелания"></textarea>
+                            <input type="text" name="name" required placeholder="Ваше имя">
+                            <input type="tel" name="phone" required placeholder="Ваш номер телефона">
+
+                            <div class="calculator__checkbox">
+                                <input type="checkbox" id="check" name="checkbox" required>
+                                <label for="check">Согласен на обработку данных</label>
+                            </div>
+
+                            <button>Расчитать цену</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="calculator__slide">
+                    <form id="calculator-form-5" class="calculator-form" action="/calculator-form.php" method="POST">
+                        <div class="calculator__slide-ratio">
+                            <div class="calculator__input">
+                                <span class="calculator__input-btn" data-range="9" data-step="-20">
+                                    <img src="img/chevron.svg" alt="icon">
+                                </span>
+                                <label class="noselect">4 м 00 см</label>
+                                <input type="range" name="width" min="0" step="1" max="800">
+                                <span class="calculator__input-btn" data-range="9" data-step="20">
+                                    <img src="img/chevron.svg" alt="icon">
+                                </span>
+                            </div>
+                            
+                            <img src="img/calcImg5.png" class="noselect" alt="Кухня">
+
+                            <div class="calculator__input calculator__input-bottom">
+                                <span class="calculator__input-btn" data-range="10" data-step="-20">
+                                    <img src="img/chevron.svg" alt="icon">
+                                </span>
+                                <label class="noselect">4 м 00 см</label>
+                                <input type="range" name="bottom-size" min="0" step="1" max="800">
+                                <span class="calculator__input-btn" data-range="10" data-step="20">
+                                    <img src="img/chevron.svg" alt="icon">
+                                </span>
+                            </div>
+    
+                        </div>
+                        <div class="calculator__slide-form noselect">
+                            <select name="material">
+                                <option value="not" selected>Материал не выбран</option>
+                                <option value="Пленка ПВХ">Пленка ПВХ</option>
+                                <option value="Пластик">Пластик</option>
+                                <option value="Массив дерева">Массив дерева</option>
+                                <option value="Эмаль">Эмаль</option>
+                            </select>
+                            <input type="text" name="wishes" placeholder="Ещё пожелания"></textarea>
+                            <input type="text" name="name" required placeholder="Ваше имя">
+                            <input type="tel" name="phone" required placeholder="Ваш номер телефона">
+
+                            <div class="calculator__checkbox">
+                                <input type="checkbox" id="check" name="checkbox" required>
+                                <label for="check">Согласен на обработку данных</label>
+                            </div>
+
+                            <button>Расчитать цену</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="bundle.js"></script>
+</body>
+</html>
